@@ -16,7 +16,10 @@ html {
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   height: 100%;
-}
+  background-image: linear-gradient(to right,
+  #fffce9
+,
+  #ffffff);}
 
 body > .container {
   padding: 60px 15px 0;
@@ -52,13 +55,31 @@ body > .container-fluid {
 
 .well{
   border-radius: 20px;
-  
+  border: none;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .col-sm-10 > textarea{
   height: 100px;
   resize: vertical;
 }
 
-.col-sm-10 > button{
-  background-color: green !important;
+::-webkit-scrollbar {
+  width: 10px;
+ height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #eeeeee; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #c9c9c9; 
+  border-radius: 5px;   
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #bdbdbd; 
 }
